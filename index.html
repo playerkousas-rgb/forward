@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>專章訓練班跨區通知轉發中心 (P174/2004)</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <h1>📮 專章訓練班跨區通知轉發中心</h1>
+    <p class="sub">對應總會通告 <strong>P174/2004</strong>《童軍專科徽章訓練班及考驗》—— 完成考驗後書面知會有關區總監。<br>
+    用法:tick 區 → 攞收件名單 → 用<u>你自己郵箱</u>寄出。本系統唔經手寄件,唔儲存任何嘢。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- 步驟 1: 揀區 -->
+  <section class="card">
+    <h2>1️⃣ 剔選要通知嘅區 <span id="selCount" class="badge">已選 0 個區</span></h2>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="🔍 搜尋區名 / 地域名,例如:沙田、九龍..." autocomplete="off">
+      <button id="btnAll" type="button" class="btn ghost">全選有電郵嘅區</button>
+      <button id="btnClear" type="button" class="btn ghost">清除</button>
+    </div>
+    <div id="districtGroups"></div>
+  </section>
+
+  <!-- 步驟 2: 收件名單 -->
+  <section class="card">
+    <h2>2️⃣ 收件人預覽</h2>
+    <p class="hint">以下電郵地址屬各區公開聯絡資料。建議用 <strong>BCC 密件副本</strong>寄出,各區之間互不見到對方地址。</p>
+    <div id="recipientPreview" class="chips"><span class="empty">尚未選擇任何區</span></div>
+    <div class="row">
+      <button id="btnCopyEmails" type="button" class="btn ghost">📋 複製收件電郵名單(貼上BCC)</button>
+    </div>
+  </section>
+
+  <!-- 步驟 3: 範本 -->
+  <section class="card">
+    <h2>3️⃣ 主旨同內文範本(自行修改)</h2>
+    <label>主旨
+      <input id="subject" type="text" autocomplete="off">
+    </label>
+    <label>內文
+      <textarea id="body" rows="18"></textarea>
+    </label>
+    <div class="row">
+      <button id="btnCopySubject" type="button" class="btn ghost">📋 複製主旨</button>
+      <button id="btnCopyBody" type="button" class="btn ghost">📋 複製內文</button>
+    </div>
+  </section>
+
+  <!-- 步驟 4: 開郵箱寄 -->
+  <section class="card sendbox">
+    <h2>4️⃣ 用自己郵箱寄出</h2>
+    <p class="hint">撳掣會開啟你部機預設嘅電郵程式,收件人(BCC)、主旨、內文自動填好,你加返附件就寄得。<br>
+    如果撳完無反應 / 內容太長開唔到,就用上面嘅複製掣,手動貼去 Gmail / Outlook,效果一樣。</p>
+    <div class="row">
+      <button id="btnMailto" type="button" class="btn primary">✉️ 開啟電郵程式並填好一切</button>
+    </div>
+    <h3 class="checktitle">寄出前對一對(唔好漏嘢):</h3>
+    <div class="checklist">
+      <label class="check"><input type="checkbox"> 收件區啱數(有幾多區嘅成員合格,就通知幾多區)</label>
+      <label class="check"><input type="checkbox"> 收件人放喺 BCC(唔係 To / CC)</label>
+      <label class="check"><input type="checkbox"> 訓練班名稱、主辦單位、日期、批准編號已填好</label>
+      <label class="check"><input type="checkbox"> 合格成員名單已做成附件(留意人數同名單對得上)</label>
+      <label class="check"><input type="checkbox"> 簽名(姓名、職銜、電話、日期)已填好</label>
+    </div>
+    <div id="result" class="result" hidden></div>
+  </section>
+
+  <footer class="foot">
+    <h3>關於 P174/2004(撮要)</h3>
+    <p>「凡經批准由區/地域/總會舉辦之專章訓練班或考驗,各區均須予以認可。訓練班領導人/專章考驗負責人於完成考驗後,必須把獲得專章之成員名單以書面知會有關之區總監。」(<a href="https://www.scout.org.hk/article_attach/2821/p174-04.pdf" target="_blank" rel="noopener">原文 PDF</a>)</p>
+    <h3>定位同聲明</h3>
+    <p>本系統只係一個聯絡名錄 + 轉發助手:畀個位你 tick 區、執齊收件名單同範本,<strong>實際寄件由你自己郵箱發出</strong>,系統唔經手、唔儲存、唔留底。寄件人身份就係你(訓練班領導人/考驗負責人)本人。各區聯絡屬公開資料;名錄可能過時,重要通知請寄出後留意有無退信,必要時用電話同區會確認。</p>
+    <p class="tiny">名錄來源:scoutworld 資料庫 + 各區官網核實(2026-10-08,44/44 區) · 非香港童軍總會官方系統</p>
+  </footer>
+</main>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

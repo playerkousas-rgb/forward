@@ -1,0 +1,222 @@
+[
+ {
+  "id": "HK-DIST-CW",
+  "name": "柴灣區",
+  "website": "https://chaiwanscout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-HKN",
+  "name": "港島北區",
+  "website": "https://www.hknscout.org/"
+ },
+ {
+  "id": "HK-DIST-HKS",
+  "name": "港島南區",
+  "website": "https://sites.google.com/hkirscout.org.hk/hks"
+ },
+ {
+  "id": "HK-DIST-HKW",
+  "name": "港島西區",
+  "website": "https://group.scout.org.hk/hkw/"
+ },
+ {
+  "id": "HK-DIST-WC",
+  "name": "灣仔區",
+  "website": "https://www.wanchaiscout.org.hk/index.php?lang=zh-tw"
+ },
+ {
+  "id": "HK-DIST-SKW",
+  "name": "筲箕灣區",
+  "website": "https://www.skwscout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-VIC",
+  "name": "維多利亞城區",
+  "website": "https://vic-web-98f2f.web.app/zh/"
+ },
+ {
+  "id": "HK-DIST-KLC",
+  "name": "九龍城區",
+  "website": "https://www.klcscout.hk/"
+ },
+ {
+  "id": "HK-DIST-KLT",
+  "name": "九龍塘區",
+  "website": "https://www.scout-kowloontong.org/"
+ },
+ {
+  "id": "HK-DIST-HMT",
+  "name": "何文田區",
+  "website": "https://hmt.krscout.org/"
+ },
+ {
+  "id": "HK-DIST-MK",
+  "name": "旺角區",
+  "website": "https://sites.google.com/view/hkscoutmkd/"
+ },
+ {
+  "id": "HK-DIST-YT",
+  "name": "油尖區",
+  "website": "https://ytd.krscout.org/"
+ },
+ {
+  "id": "HK-DIST-SM",
+  "name": "深旺區",
+  "website": "https://group.scout.org.hk/smd/"
+ },
+ {
+  "id": "HK-DIST-SSPE",
+  "name": "深水埗東區",
+  "website": "https://sspe.krscout.org/"
+ },
+ {
+  "id": "HK-DIST-SSPW",
+  "name": "深水埗西區",
+  "website": "https://sspw.krscout.org/"
+ },
+ {
+  "id": "HK-DIST-HH",
+  "name": "紅磡區",
+  "website": "https://hhd.krscout.org/"
+ },
+ {
+  "id": "HK-DIST-KLB",
+  "name": "九龍灣區",
+  "website": "https://www.hkscout-klb.org/"
+ },
+ {
+  "id": "HK-DIST-TKO",
+  "name": "將軍澳區",
+  "website": "https://hkscout-tko.org/"
+ },
+ {
+  "id": "HK-DIST-TWS",
+  "name": "慈雲山區",
+  "website": "https://group.scout.org.hk/tws/"
+ },
+ {
+  "id": "HK-DIST-SMP",
+  "name": "秀茂坪區",
+  "website": "https://sites.google.com/view/smpscout"
+ },
+ {
+  "id": "HK-DIST-SK",
+  "name": "西貢區",
+  "website": "https://sites.google.com/hkscout-skd.org/website"
+ },
+ {
+  "id": "HK-DIST-KTD",
+  "name": "觀塘區",
+  "website": "http://hkscout-ktd.org/"
+ },
+ {
+  "id": "HK-DIST-LYM",
+  "name": "鯉魚門區",
+  "website": "https://www.hkscout-lym.org/"
+ },
+ {
+  "id": "HK-DIST-WTS",
+  "name": "黃大仙區",
+  "website": "https://hkscout-wts.org/"
+ },
+ {
+  "id": "HK-DIST-YLE",
+  "name": "元朗東區",
+  "website": "https://yle.scout-ntr.org.hk/"
+ },
+ {
+  "id": "HK-DIST-YLW",
+  "name": "元朗西區",
+  "website": "https://www.ylw-scout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-NKC",
+  "name": "北葵涌區",
+  "website": "https://www.nkcscout.org/"
+ },
+ {
+  "id": "HK-DIST-SPH",
+  "name": "十八鄉區",
+  "website": "https://www.sph-scout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-SKC",
+  "name": "南葵涌區",
+  "website": "https://skc.scout-ntr.org.hk/"
+ },
+ {
+  "id": "HK-DIST-LANTAU",
+  "name": "大嶼山區",
+  "website": "https://vincentpun213.wixsite.com/lantauscout"
+ },
+ {
+  "id": "HK-DIST-TME",
+  "name": "屯門東區",
+  "website": "https://www.tmescout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-TMW",
+  "name": "屯門西區",
+  "website": "https://tmw.scout-ntr.org.hk/"
+ },
+ {
+  "id": "HK-DIST-TW",
+  "name": "荃灣區",
+  "website": "https://www.twdscout.org.hk/"
+ },
+ {
+  "id": "HK-DIST-ISL",
+  "name": "離島區",
+  "website": "https://sites.google.com/view/islands-scout"
+ },
+ {
+  "id": "HK-DIST-TY",
+  "name": "青衣區",
+  "website": "https://tyd.scout-ntr.org.hk/"
+ },
+ {
+  "id": "HK-DIST-TPN",
+  "name": "大埔北區",
+  "website": "https://tpnscout.org/"
+ },
+ {
+  "id": "HK-DIST-TPS",
+  "name": "大埔南區",
+  "website": "http://www.tps.org.hk/"
+ },
+ {
+  "id": "HK-DIST-STN",
+  "name": "沙田北區",
+  "website": "https://www.stnscout.org/"
+ },
+ {
+  "id": "HK-DIST-STS",
+  "name": "沙田南區",
+  "website": "https://www.stsd-scout.org/"
+ },
+ {
+  "id": "HK-DIST-STE",
+  "name": "沙田東區",
+  "website": "https://www.stescout.org/"
+ },
+ {
+  "id": "HK-DIST-STW",
+  "name": "沙田西區",
+  "website": "https://www.stwscout.org/wp/"
+ },
+ {
+  "id": "HK-DIST-PF",
+  "name": "璧峰區",
+  "website": "https://sites.google.com/view/pikfung-district"
+ },
+ {
+  "id": "HK-DIST-SY",
+  "name": "雙魚區",
+  "website": "https://www.syd-hkscout.org/"
+ },
+ {
+  "id": "HK-DIST-SJD",
+  "name": "銀禧區",
+  "website": "http://group.scout.org.hk/sjd/"
+ }
+]

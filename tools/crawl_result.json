@@ -1,0 +1,298 @@
+{
+ "HK-DIST-CW": {
+  "name": "柴灣區",
+  "website": "https://chaiwanscout.org.hk/",
+  "emails": [
+   "mailto:admin@chaiwanscout.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-HKN": {
+  "name": "港島北區",
+  "website": "https://www.hknscout.org/",
+  "emails": [
+   "mailto:hknscout@gmail.com"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-HKS": {
+  "name": "港島南區",
+  "website": "https://sites.google.com/hkirscout.org.hk/hks",
+  "emails": [
+   "mailto:hks@hkirscout.org.hk",
+   "mailto:hks_adc_cs@hkirscout.org.hk",
+   "mailto:hks_adc_sc@hkirscout.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-HKW": {
+  "name": "港島西區",
+  "website": "https://group.scout.org.hk/hkw/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-WC": {
+  "name": "灣仔區",
+  "website": "https://www.wanchaiscout.org.hk/index.php?lang=zh-tw",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SKW": {
+  "name": "筲箕灣區",
+  "website": "https://www.skwscout.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-VIC": {
+  "name": "維多利亞城區",
+  "website": "https://vic-web-98f2f.web.app/zh/",
+  "emails": [
+   "page:vic@hkirscout.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-KLC": {
+  "name": "九龍城區",
+  "website": "https://www.klcscout.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-KLT": {
+  "name": "九龍塘區",
+  "website": "https://www.scout-kowloontong.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-HMT": {
+  "name": "何文田區",
+  "website": "https://hmt.krscout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-MK": {
+  "name": "旺角區",
+  "website": "https://sites.google.com/view/hkscoutmkd/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-YT": {
+  "name": "油尖區",
+  "website": "https://ytd.krscout.org/",
+  "emails": [
+   "page:yt@krscout.org"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-SM": {
+  "name": "深旺區",
+  "website": "https://group.scout.org.hk/smd/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SSPE": {
+  "name": "深水埗東區",
+  "website": "https://sspe.krscout.org/",
+  "emails": [
+   "mailto:sspe@krscout.org"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-SSPW": {
+  "name": "深水埗西區",
+  "website": "https://sspw.krscout.org/",
+  "emails": [
+   "page:sspw@krscout.org"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-HH": {
+  "name": "紅磡區",
+  "website": "https://hhd.krscout.org/",
+  "emails": [
+   "page:c_0af6e79ffe33ec404eeb5e32bb35af01aecfd1e1d4df27d7f96fc94939b7a1e7@group.calendar.google.com"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-KLB": {
+  "name": "九龍灣區",
+  "website": "https://www.hkscout-klb.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TKO": {
+  "name": "將軍澳區",
+  "website": "https://hkscout-tko.org/",
+  "emails": [
+   "mailto:enquiry@tko-scout.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-TWS": {
+  "name": "慈雲山區",
+  "website": "https://group.scout.org.hk/tws/",
+  "emails": [
+   "mailto:tws@scouting.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-SMP": {
+  "name": "秀茂坪區",
+  "website": "https://sites.google.com/view/smpscout",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SK": {
+  "name": "西貢區",
+  "website": "https://sites.google.com/hkscout-skd.org/website",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-KTD": {
+  "name": "觀塘區",
+  "website": "http://hkscout-ktd.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-LYM": {
+  "name": "鯉魚門區",
+  "website": "https://www.hkscout-lym.org/",
+  "emails": [
+   "mailto:lym@scout.org.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-WTS": {
+  "name": "黃大仙區",
+  "website": "https://hkscout-wts.org/",
+  "emails": [
+   "page:wtsdistrict2021@gmail.com"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-YLE": {
+  "name": "元朗東區",
+  "website": "https://yle.scout-ntr.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-YLW": {
+  "name": "元朗西區",
+  "website": "https://www.ylw-scout.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-NKC": {
+  "name": "北葵涌區",
+  "website": "https://www.nkcscout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SPH": {
+  "name": "十八鄉區",
+  "website": "https://www.sph-scout.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SKC": {
+  "name": "南葵涌區",
+  "website": "https://skc.scout-ntr.org.hk/",
+  "emails": [
+   "page:skcdist@yahoo.com.hk"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-LANTAU": {
+  "name": "大嶼山區",
+  "website": "https://vincentpun213.wixsite.com/lantauscout",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TME": {
+  "name": "屯門東區",
+  "website": "https://www.tmescout.org.hk/",
+  "emails": [
+   "mailto:tmedscout@gmail.com"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-TMW": {
+  "name": "屯門西區",
+  "website": "https://tmw.scout-ntr.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TW": {
+  "name": "荃灣區",
+  "website": "https://www.twdscout.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-ISL": {
+  "name": "離島區",
+  "website": "https://sites.google.com/view/islands-scout",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TY": {
+  "name": "青衣區",
+  "website": "https://tyd.scout-ntr.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TPN": {
+  "name": "大埔北區",
+  "website": "https://tpnscout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-TPS": {
+  "name": "大埔南區",
+  "website": "http://www.tps.org.hk/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-STN": {
+  "name": "沙田北區",
+  "website": "https://www.stnscout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-STS": {
+  "name": "沙田南區",
+  "website": "https://www.stsd-scout.org/",
+  "emails": [
+   "page:info@stsd-scout.org"
+  ],
+  "status": "ok"
+ },
+ "HK-DIST-STE": {
+  "name": "沙田東區",
+  "website": "https://www.stescout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-STW": {
+  "name": "沙田西區",
+  "website": "https://www.stwscout.org/wp/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-PF": {
+  "name": "璧峰區",
+  "website": "https://sites.google.com/view/pikfung-district",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SY": {
+  "name": "雙魚區",
+  "website": "https://www.syd-hkscout.org/",
+  "emails": [],
+  "status": "ok"
+ },
+ "HK-DIST-SJD": {
+  "name": "銀禧區",
+  "website": "http://group.scout.org.hk/sjd/",
+  "emails": [],
+  "status": "ok"
+ }
+}

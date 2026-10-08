@@ -1,0 +1,10 @@
+{
+  "name": "scout-forward",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "童軍專科徽章訓練班跨區通知轉發中心 (P174/2004) - Vercel + Git 部署,零資料庫,不儲存紀錄",
+  "engines": {
+    "node": ">=18"
+  }
+}
