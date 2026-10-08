@@ -15,9 +15,20 @@
   </div>
 </header>
 
+<!-- ========== Step 進度條 ========== -->
+<nav class="stepper wrap" aria-label="步驟">
+  <ol id="stepperBar">
+    <li data-step="1" class="active"><span class="num">1</span><span class="lbl">揀區</span></li>
+    <li data-step="2"><span class="num">2</span><span class="lbl">收件人</span></li>
+    <li data-step="3"><span class="num">3</span><span class="lbl">範本</span></li>
+    <li data-step="4"><span class="num">4</span><span class="lbl">寄出</span></li>
+  </ol>
+</nav>
+
 <main class="wrap">
+
   <!-- 步驟 1: 揀區 -->
-  <section class="card">
+  <section class="card step" data-step="1">
     <h2>1️⃣ 剔選要通知嘅區 <span id="selCount" class="badge">已選 0 個區</span></h2>
     <div class="toolbar">
       <input id="search" type="search" placeholder="🔍 搜尋區名 / 地域名,例如:沙田、九龍..." autocomplete="off">
@@ -25,35 +36,49 @@
       <button id="btnClear" type="button" class="btn ghost">清除</button>
     </div>
     <div id="districtGroups"></div>
+    <div class="row navrow">
+      <span class="spacer"></span>
+      <button type="button" class="btn primary" data-next="2">下一步:收件人預覽 ➡️</button>
+    </div>
   </section>
 
   <!-- 步驟 2: 收件名單 -->
-  <section class="card">
+  <section class="card step" data-step="2" hidden>
     <h2>2️⃣ 收件人預覽</h2>
     <p class="hint">以下電郵地址屬各區公開聯絡資料。建議用 <strong>BCC 密件副本</strong>寄出,各區之間互不見到對方地址。</p>
     <div id="recipientPreview" class="chips"><span class="empty">尚未選擇任何區</span></div>
     <div class="row">
       <button id="btnCopyEmails" type="button" class="btn ghost">📋 複製收件電郵名單(貼上BCC)</button>
     </div>
+    <div class="row navrow">
+      <button type="button" class="btn ghost" data-prev="1">⬅️ 上一步</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn primary" data-next="3">下一步:主旨/內文 ➡️</button>
+    </div>
   </section>
 
   <!-- 步驟 3: 範本 -->
-  <section class="card">
+  <section class="card step" data-step="3" hidden>
     <h2>3️⃣ 主旨同內文範本(自行修改)</h2>
     <label>主旨
       <input id="subject" type="text" autocomplete="off">
     </label>
     <label>內文
-      <textarea id="body" rows="18"></textarea>
+      <textarea id="body" rows="14"></textarea>
     </label>
     <div class="row">
       <button id="btnCopySubject" type="button" class="btn ghost">📋 複製主旨</button>
       <button id="btnCopyBody" type="button" class="btn ghost">📋 複製內文</button>
     </div>
+    <div class="row navrow">
+      <button type="button" class="btn ghost" data-prev="2">⬅️ 上一步</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn primary" data-next="4">下一步:寄出 ➡️</button>
+    </div>
   </section>
 
   <!-- 步驟 4: 開郵箱寄 -->
-  <section class="card sendbox">
+  <section class="card step sendbox" data-step="4" hidden>
     <h2>4️⃣ 用自己郵箱寄出</h2>
     <p class="hint">撳掣會開啟你部機預設嘅電郵程式,收件人(BCC)、主旨、內文自動填好,你加返附件就寄得。<br>
     如果撳完無反應 / 內容太長開唔到,就用上面嘅複製掣,手動貼去 Gmail / Outlook,效果一樣。</p>
@@ -69,17 +94,33 @@
       <label class="check"><input type="checkbox"> 簽名(姓名、職銜、電話、日期)已填好</label>
     </div>
     <div id="result" class="result" hidden></div>
+    <div class="row navrow">
+      <button type="button" class="btn ghost" data-prev="3">⬅️ 上一步</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" id="btnRestart">🔄 重新開始</button>
+    </div>
   </section>
 
-  <footer class="foot">
+  <!-- 關於 / 聲明 (收埋,展開先睇) -->
+  <details class="card about">
+    <summary>📖 關於 P174/2004 同系統聲明</summary>
     <h3>關於 P174/2004(撮要)</h3>
     <p>「凡經批准由區/地域/總會舉辦之專章訓練班或考驗,各區均須予以認可。訓練班領導人/專章考驗負責人於完成考驗後,必須把獲得專章之成員名單以書面知會有關之區總監。」(<a href="https://www.scout.org.hk/article_attach/2821/p174-04.pdf" target="_blank" rel="noopener">原文 PDF</a>)</p>
     <h3>定位同聲明</h3>
     <p>本系統只係一個聯絡名錄 + 轉發助手:畀個位你 tick 區、執齊收件名單同範本,<strong>實際寄件由你自己郵箱發出</strong>,系統唔經手、唔儲存、唔留底。寄件人身份就係你(訓練班領導人/考驗負責人)本人。各區聯絡屬公開資料;名錄可能過時,重要通知請寄出後留意有無退信,必要時用電話同區會確認。</p>
+    <h3>發現資料錯/過時?</h3>
+    <p>右下角有「🐛💬 回報 · 意見」掣,撳佢就可以用 Scout Admin 統一回報系統通知管理員跟進。</p>
     <p class="tiny">名錄來源:scoutworld 資料庫 + 各區官網核實(2026-10-08,44/44 區) · 非香港童軍總會官方系統</p>
+  </details>
+
+  <footer class="foot">
+    <p class="copy">© <span id="yr"></span> Scout System · All Rights Reserved · 非香港童軍總會官方系統</p>
+    <p class="tiny">🛡️ 問題回報/意見回饋由 <a href="https://scout-admin-blue.vercel.app/" target="_blank" rel="noopener">Scout Admin</a> 統一處理 · 右下角「🐛💬 回報 · 意見」</p>
   </footer>
 </main>
 
+<!-- ========== Scout Admin 統一回報 widget(專章系統) ========== -->
+<script src="https://scout-admin-blue.vercel.app/widget.js" data-app="專章系統"></script>
 <script type="module" src="./app.js"></script>
 </body>
 </html>

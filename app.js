@@ -25,6 +25,8 @@ const DEFAULT_BODY = `敬啟者:
 日期:`;
 
 // ---------- 狀態 ----------
+const STEPS = 4;
+let currentStep = 1;
 const selected = new Set(); // district id
 const $ = (id) => document.getElementById(id);
 const byId = Object.fromEntries(DISTRICTS.map((d) => [d.id, d]));
@@ -32,7 +34,23 @@ const regionName = Object.fromEntries(REGIONS.map((r) => [r.id, r.name]));
 const hasEmail = (d) => d.email && d.email.includes("@");
 const withEmail = DISTRICTS.filter(hasEmail);
 
-// BCC 名單:主地址 + 有 alt 的舊地址(一併寄出)
+// ---------- Step 導航 ----------
+function goToStep(n) {
+  currentStep = Math.max(1, Math.min(STEPS, n));
+  document.querySelectorAll(".step").forEach((sec) => {
+    const s = Number(sec.dataset.step);
+    sec.hidden = s !== currentStep;
+  });
+  document.querySelectorAll("#stepperBar li").forEach((li) => {
+    const s = Number(li.dataset.step);
+    li.classList.toggle("active", s === currentStep);
+    li.classList.toggle("done", s < currentStep);
+  });
+  const card = document.querySelector(`.step[data-step="${currentStep}"]`);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// ---------- BCC 名單 ----------
 function selectedEmails() {
   const out = [];
   for (const id of selected) {
@@ -44,7 +62,7 @@ function selectedEmails() {
   return out;
 }
 
-// ---------- 渲染:按地域分組的 checkbox ----------
+// ---------- 渲染:按地域分組 checkbox ----------
 function renderGroups(filter = "") {
   const q = filter.trim().toLowerCase();
   const box = $("districtGroups");
@@ -183,8 +201,38 @@ $("btnMailto").addEventListener("click", () => {
   showResult("info", `ℹ️ 已嘗試開啟電郵程式(${[...selected].length} 個區)。記得:<strong>加返合格名單附件</strong>、對返 checklists 先好寄。如無反應,請用複製掣手動寄。`);
 });
 
+// ---------- Step nav ----------
+document.querySelectorAll("[data-next]").forEach((b) => {
+  b.addEventListener("click", () => {
+    const n = Number(b.dataset.next);
+    if (n === 2 && selected.size === 0) {
+      alert("請先剔選至少一個要通知嘅區。");
+      return;
+    }
+    goToStep(n);
+  });
+});
+document.querySelectorAll("[data-prev]").forEach((b) => {
+  b.addEventListener("click", () => goToStep(Number(b.dataset.prev)));
+});
+document.querySelectorAll("#stepperBar li").forEach((li) => {
+  li.addEventListener("click", () => goToStep(Number(li.dataset.step)));
+});
+$("btnRestart").addEventListener("click", () => {
+  if (!confirm("確定重新開始?已揀嘅區同改過嘅範本會還原。")) return;
+  selected.clear();
+  $("subject").value = DEFAULT_SUBJECT;
+  $("body").value = DEFAULT_BODY;
+  $("result").hidden = true;
+  renderGroups();
+  refreshPreview();
+  goToStep(1);
+});
+
 // ---------- 初始化 ----------
 $("subject").value = DEFAULT_SUBJECT;
 $("body").value = DEFAULT_BODY;
+$("yr").textContent = new Date().getFullYear();
 renderGroups();
 refreshPreview();
+goToStep(1);
